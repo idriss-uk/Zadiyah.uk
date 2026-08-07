@@ -1,0 +1,254 @@
+/* =============================================
+   ZADIYAH — London Rain
+   Custom Styles
+   ============================================= */
+
+/* ===== BASE & RESETS ===== */
+*, *::before, *::after { box-sizing: border-box; }
+html { font-family: 'Montserrat', sans-serif; background: #0A0A0A; color: #FAFAFA; }
+body { margin: 0; overflow-x: hidden; }
+
+/* ===== CUSTOM SCROLLBAR ===== */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #0A0A0A; }
+::-webkit-scrollbar-thumb { background: #D4AF37; border-radius: 3px; }
+
+/* ===== KEYFRAME ANIMATIONS ===== */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+@keyframes breathe {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 1; }
+}
+@keyframes slideDown {
+  from { opacity: 0; max-height: 0; }
+  to { opacity: 1; max-height: 500px; }
+}
+@keyframes rainDrop {
+  0% { transform: translateY(-10px); opacity: 0; }
+  20% { opacity: 1; }
+  100% { transform: translateY(100vh); opacity: 0; }
+}
+
+/* ===== ANIMATION UTILITIES ===== */
+.animate-fade-in-up { animation: fadeInUp 1s ease-out forwards; }
+.animate-fade-in { animation: fadeIn 1.2s ease-out forwards; }
+.animate-delay-1 { animation-delay: 0.2s; }
+.animate-delay-2 { animation-delay: 0.4s; }
+.animate-delay-3 { animation-delay: 0.6s; }
+.animate-delay-4 { animation-delay: 0.8s; }
+
+/* ===== SHIMMER GOLD TEXT ===== */
+.shimmer-text {
+  background: linear-gradient(90deg, #D4AF37 0%, #F5E6A3 25%, #D4AF37 50%, #C5A059 75%, #D4AF37 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmer 4s linear infinite;
+}
+
+/* ===== SCENT CARD GLOW ===== */
+.scent-card {
+  position: relative;
+  transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1), box-shadow 0.5s ease;
+}
+.scent-card::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(135deg, transparent, rgba(212,175,55,0), rgba(212,175,55,0.4), rgba(212,175,55,0));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.scent-card:hover::before { opacity: 1; }
+.scent-card:hover { transform: translateY(-8px); box-shadow: 0 20px 60px rgba(212,175,55,0.08); }
+
+/* ===== ACCORDION ===== */
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s cubic-bezier(0.23, 1, 0.32, 1), padding 0.3s ease;
+}
+.accordion-content.open {
+  max-height: 500px;
+}
+.accordion-icon {
+  transition: transform 0.3s ease;
+}
+.accordion-icon.open {
+  transform: rotate(45deg);
+}
+
+/* ===== SLIDE-OVER DRAWER ===== */
+.drawer-overlay {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+.drawer-overlay.open {
+  opacity: 1;
+  visibility: visible;
+}
+.drawer-panel {
+  transform: translateX(100%);
+  transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.drawer-panel.open {
+  transform: translateX(0);
+}
+
+/* ===== HEADER BLUR ===== */
+.header-blur {
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+}
+
+/* ===== SECTION REVEAL (Intersection Observer) ===== */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== QUOTE SLIDER ===== */
+.quote-slide {
+  opacity: 0;
+  position: absolute;
+  transition: opacity 0.8s ease;
+}
+.quote-slide.active {
+  opacity: 1;
+  position: relative;
+}
+
+/* ===== RAIN PARTICLES ===== */
+.rain-container {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 1;
+}
+.raindrop {
+  position: absolute;
+  width: 1px;
+  height: 20px;
+  background: linear-gradient(to bottom, transparent, rgba(212,175,55,0.3));
+  animation: rainDrop linear infinite;
+}
+
+/* ===== MOBILE NAV ===== */
+.mobile-nav {
+  transform: translateY(-100%);
+  transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.mobile-nav.open {
+  transform: translateY(0);
+}
+
+/* ===== SCENT TAB ===== */
+.scent-tab {
+  position: relative;
+  transition: color 0.3s ease;
+}
+.scent-tab::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: #D4AF37;
+  transition: width 0.4s ease;
+}
+.scent-tab.active::after,
+.scent-tab:hover::after { width: 100%; }
+.scent-tab.active { color: #D4AF37; }
+
+/* ===== STICKY MOBILE BUY BAR ===== */
+.mobile-buy-bar {
+  transform: translateY(100%);
+  transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.mobile-buy-bar.visible {
+  transform: translateY(0);
+}
+
+/* ===== NEWSLETTER INPUT ===== */
+.newsletter-input:focus {
+  outline: none;
+  border-color: #D4AF37;
+  box-shadow: 0 0 0 1px rgba(212,175,55,0.3);
+}
+
+/* ===== GOLD LINE DIVIDER ===== */
+.gold-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #D4AF37, transparent);
+}
+
+/* ===== BUTTON — SOLID GOLD ===== */
+.btn-gold {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+.btn-gold::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(255,255,255,0.1);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.6s ease, height 0.6s ease;
+}
+.btn-gold:hover::before {
+  width: 300px;
+  height: 300px;
+}
+
+/* ===== BUTTON — OUTLINE GOLD ===== */
+.btn-outline-gold {
+  position: relative;
+  overflow: hidden;
+}
+.btn-outline-gold::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: #D4AF37;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+  z-index: -1;
+}
+.btn-outline-gold:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+.btn-outline-gold:hover {
+  color: #0A0A0A;
+}
