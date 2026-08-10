@@ -1,0 +1,10 @@
+{
+  "name": "zadiyah-uk",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "build": "echo build",
+    "start": "node app.js"
+  },
+  "dependencies": {}
+}
