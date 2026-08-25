@@ -1,12 +1,11 @@
 {
-  "name": "zadiyah-uk",
+  "name": "zadiyah-storefront",
   "version": "1.0.0",
-  "main": "index.html",
+  "main": "server.js",
   "scripts": {
-    "build": "echo build",
-   "start": "npx serve -l $PORT ."
+    "start": "node server.js"
   },
   "dependencies": {
-    "serve": "^14.2.1"
+    "express": "^4.19.2"
   }
 }
