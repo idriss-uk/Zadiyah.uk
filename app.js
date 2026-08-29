@@ -8,7 +8,7 @@ let cartQty = 0;
 let productQty = 1;
 let currentQuote = 0;
 let quoteInterval;
-const PRICE = 29.99;
+const PRICE = 14.99;
 
 // =============================================
 // SLIDE-OVER SHOPPING BAG DRAWER
