@@ -257,7 +257,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // =============================================
 const galleryImages = [
   "images/1784682931474.jpg",
-  "images/bottle.jpg",
+ images/1784682926466.jpg
   "images/1784682913725.jpg",
   "images/1784682926466.jpg",
   "images/banner.jjpg.jpeg",
