@@ -172,8 +172,8 @@
             
             <!-- Primary Large Main Display -->
             <div id="main-product-display" class="flex-grow h-full relative border border-[#1A1A1A] rounded-md overflow-hidden group bg-black/40">
-              <!-- Main active image (Default to Image D: 1784682931474.jpg / campaign box on rainy street) -->
-              <img src="images/1784682931474.jpg" id="active-product-image" class="w-full h-full object-contain p-4 transition-opacity duration-300" alt="ZADIYAH London Rain EDT Main View">
+              <!-- Main active image (Default: bottle.jpg, the primary product shot) -->
+              <img src="images/bottle.jpg" id="active-product-image" class="w-full h-full object-contain p-4 transition-opacity duration-300" alt="ZADIYAH London Rain EDT Main View">
               
               <!-- Overlay Navigation Arrows for Main Display (Hidden, visible on hover) -->
               <button onclick="prevGalleryImage()" aria-label="Previous image" class="absolute left-3 top-1/2 -translate-y-1/2 w-9 h-9 bg-black/60 text-white rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity hover:bg-black/80 border border-white/20"><i class="fas fa-chevron-left text-sm"></i></button>
@@ -182,8 +182,6 @@
               <!-- Subtle indicators dots inside Main Display -->
               <div id="gallery-dots" class="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2">
                 <span class="w-2.5 h-2.5 rounded-full border border-white active-dot bg-white"></span>
-                <span class="w-2.5 h-2.5 rounded-full border border-white inactive-dot bg-transparent"></span>
-                <span class="w-2.5 h-2.5 rounded-full border border-white inactive-dot bg-transparent"></span>
                 <span class="w-2.5 h-2.5 rounded-full border border-white inactive-dot bg-transparent"></span>
                 <span class="w-2.5 h-2.5 rounded-full border border-white inactive-dot bg-transparent"></span>
                 <span class="w-2.5 h-2.5 rounded-full border border-white inactive-dot bg-transparent"></span>
@@ -198,12 +196,10 @@
               
               <!-- Vertical scroll container for thumbnails -->
               <div id="thumb-scroll-container" class="flex-grow w-full flex flex-col items-center gap-3 overflow-y-auto pr-1 scrollbar-none max-h-[380px]">
-                <img src="images/1784682931474.jpg" onclick="selectGalleryImage(0, this)" class="w-full h-16 object-cover border-2 border-[#A0883E] rounded active-thumbnail clickable-thumbnail cursor-pointer transition-all" alt="ZADIYAH Main View">
-                <img src="images/bottle.jpg" onclick="selectGalleryImage(1, this)" class="w-full h-16 object-cover border-2 border-[#1A1A1A] rounded clickable-thumbnail cursor-pointer opacity-70 hover:opacity-100 transition-all" alt="ZADIYAH Bottle detail">
-                <img src="images/1784682913725.jpg" onclick="selectGalleryImage(2, this)" class="w-full h-16 object-cover border-2 border-[#1A1A1A] rounded clickable-thumbnail cursor-pointer opacity-70 hover:opacity-100 transition-all" alt="ZADIYAH Garden path">
-                <img src="images/1784682926466.jpg" onclick="selectGalleryImage(3, this)" class="w-full h-16 object-cover border-2 border-[#1A1A1A] rounded clickable-thumbnail cursor-pointer opacity-70 hover:opacity-100 transition-all" alt="ZADIYAH Garden meadow">
-                <img src="images/banner.jjpg.jpeg" onclick="selectGalleryImage(4, this)" class="w-full h-16 object-cover border-2 border-[#1A1A1A] rounded clickable-thumbnail cursor-pointer opacity-70 hover:opacity-100 transition-all" alt="ZADIYAH Marketing Price">
-                <img src="images/scent_pyramid.jpg" onclick="selectGalleryImage(5, this)" class="w-full h-16 object-cover border-2 border-[#1A1A1A] rounded clickable-thumbnail cursor-pointer opacity-70 hover:opacity-100 transition-all" alt="ZADIYAH Scent Pyramid Infographic">
+                <img src="images/bottle.jpg" onclick="selectGalleryImage(0, this)" class="w-full h-16 object-cover border-2 border-[#A0883E] rounded active-thumbnail clickable-thumbnail cursor-pointer transition-all" alt="ZADIYAH Bottle detail">
+                <img src="images/1784682913725.jpg" onclick="selectGalleryImage(1, this)" class="w-full h-16 object-cover border-2 border-[#1A1A1A] rounded clickable-thumbnail cursor-pointer opacity-70 hover:opacity-100 transition-all" alt="ZADIYAH Garden path">
+                <img src="images/1784682926466.jpg" onclick="selectGalleryImage(2, this)" class="w-full h-16 object-cover border-2 border-[#1A1A1A] rounded clickable-thumbnail cursor-pointer opacity-70 hover:opacity-100 transition-all" alt="ZADIYAH Garden meadow">
+                <img src="images/scent_pyramid.jpg" onclick="selectGalleryImage(3, this)" class="w-full h-16 object-cover border-2 border-[#1A1A1A] rounded clickable-thumbnail cursor-pointer opacity-70 hover:opacity-100 transition-all" alt="ZADIYAH Scent Pyramid Infographic">
               </div>
               
               <button onclick="scrollThumbsDown()" aria-label="Scroll thumbnails down" class="w-full flex items-center justify-center h-5 text-[#A0883E] hover:text-[#CBB573] transition-colors"><i class="fas fa-chevron-down text-xs"></i></button>
@@ -225,6 +221,27 @@
     <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-3 animate-fade-in opacity-0" style="animation-fill-mode: forwards; animation-delay: 1.5s;">
       <span class="text-[9px] tracking-[0.3em] uppercase text-slate/50">Scroll</span>
       <div class="w-px h-12 bg-gradient-to-b from-gold/50 to-transparent" style="animation: breathe 2s ease-in-out infinite;"></div>
+    </div>
+  </section>
+
+
+  <!-- ========================================
+       2B. VIDEO SHOWCASE
+  ========================================= -->
+  <section id="video" class="relative py-24 md:py-32 bg-obsidian">
+    <div class="max-w-4xl mx-auto px-6 lg:px-12">
+      <div class="text-center mb-14 reveal">
+        <p class="text-[10px] tracking-[0.4em] uppercase text-gold mb-4">In Motion</p>
+        <h2 class="font-serif text-3xl md:text-4xl lg:text-5xl font-light text-warmwhite">Watch the Story Unfold</h2>
+        <div class="gold-divider w-20 mx-auto mt-6"></div>
+      </div>
+
+      <div class="relative reveal">
+        <div class="absolute -inset-4 bg-gradient-to-br from-gold/5 via-transparent to-gold/5 rounded-lg blur-2xl"></div>
+        <video controls playsinline poster="images/Zadiyah_IMG_front.jpg" class="w-full aspect-video object-cover rounded-lg shadow-xl relative border border-white/5">
+          <source src="images/brand_video.mp4" type="video/mp4">
+        </video>
+      </div>
     </div>
   </section>
 
@@ -634,6 +651,36 @@
             SEND MESSAGE
           </button>
         </form>
+      </div>
+    </section>
+
+    <!-- VIP Club / Email Waitlist -->
+    <section id="vip-club" class="py-20 md:py-24 border-t border-white/5 bg-charcoal">
+      <div class="max-w-xl mx-auto px-6 text-center reveal">
+        <p class="text-[10px] tracking-[0.4em] uppercase text-gold mb-3">VIP Club</p>
+        <h3 class="font-serif text-3xl md:text-4xl font-light mb-4 text-warmwhite">Join the Waitlist</h3>
+        <p class="text-sm text-slate/70 leading-relaxed max-w-md mx-auto mb-8">Be first to hear about limited drops, early access, and exclusive offers from ZADIYAH.</p>
+
+        <form name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="flex flex-col sm:flex-row gap-3 sm:gap-0">
+          <input type="hidden" name="form-name" value="newsletter" />
+          <p class="hidden">
+            <label>Don't fill this out: <input name="bot-field" /></label>
+          </p>
+          <input
+            type="email"
+            name="email"
+            placeholder="Your Email Address"
+            required
+            class="w-full px-5 py-4 bg-obsidian border border-white/10 text-warmwhite text-sm placeholder:text-slate/40 rounded-none focus:outline-none focus:border-gold transition-colors duration-300 sm:rounded-l"
+          />
+          <button
+            type="submit"
+            class="btn-gold px-8 py-4 bg-gold text-obsidian text-[11px] tracking-[0.2em] uppercase font-semibold hover:bg-champagne transition-all duration-300 whitespace-nowrap sm:rounded-r"
+          >
+            Join VIP Club
+          </button>
+        </form>
+        <p class="text-[10px] text-slate/40 mt-4">No spam. Unsubscribe anytime.</p>
       </div>
     </section>
 
