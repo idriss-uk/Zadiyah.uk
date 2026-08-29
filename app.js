@@ -317,5 +317,24 @@ function scrollThumbsDown() {
   const container = document.getElementById('thumb-scroll-container');
   if (container) container.scrollBy({ top: 100, behavior: 'smooth' });
 }
+// Accordion Toggle Function for FAQ
+function toggleFaq(button) {
+  const content = button.nextElementSibling;
+  const icon = button.querySelector('.faq-icon');
+  const isOpen = content.style.maxHeight && content.style.maxHeight !== '0px';
 
+  // Close all other open accordions
+  document.querySelectorAll('.faq-content').forEach(el => el.style.maxHeight = '0px');
+  document.querySelectorAll('.faq-icon').forEach(el => {
+    el.textContent = '+';
+    el.style.transform = 'rotate(0deg)';
+  });
+
+  // Expand the clicked accordion if it wasn't open
+  if (!isOpen) {
+    content.style.maxHeight = content.scrollHeight + 'px';
+    icon.textContent = '−';
+    icon.style.transform = 'rotate(180deg)';
+  }
+}
 
