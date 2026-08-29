@@ -256,11 +256,9 @@ document.addEventListener('DOMContentLoaded', () => {
 // MARKETPLACE GALLERY INTERACTION
 // =============================================
 const galleryImages = [
-  "images/1784682931474.jpg",
   "images/bottle.jpg",
   "images/1784682913725.jpg",
   "images/1784682926466.jpg",
-  "images/banner.jjpg.jpeg",
   "images/scent_pyramid.jpg"
 ];
 let currentGalleryIdx = 0;
