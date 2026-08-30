@@ -169,46 +169,31 @@
         <div id="product-display" class="order-1 lg:order-2 w-full max-w-xl h-[460px] md:h-[500px] relative border border-[#1A1A1A] bg-[#0A0A0A] px-4 md:px-8 py-6 flex flex-col justify-center items-center text-center rounded-lg animate-fade-in opacity-0" style="animation-fill-mode: forwards; animation-delay: 0.5s;">
           
           <!-- Marketplace-style Carousel Structure -->
-          <div id="product-gallery" class="w-full h-full flex flex-row items-center gap-4 md:gap-6 relative">
-            
-            <!-- Primary Large Main Display -->
-            <div id="main-product-display" class="flex-grow h-full relative border border-[#1A1A1A] rounded-md overflow-hidden group bg-black/40">
-              <!-- Main active image (Default to Image D: 1784682931474.jpg / campaign box on rainy street) -->
-            <img src="images/1784682926466.jpg" id="active-product-image" class="w-full h-full object-contain p-4 transition-opacity duration-300" alt="ZADIYAH London Rain EDT">
+         <div id="product-gallery" class="w-full h-full flex flex-row items-center gap-4 md:gap-6 relative">
+
+          <div id="main-product-display" class="flex-grow h-full relative border border-[#1A1A1A] rounded-md overflow-hidden bg-black/40 flex items-center justify-center p-4">
+            <img src="images/1784682926466.jpg" id="active-product-image" class="w-full h-full max-h-[420px] object-contain transition-opacity duration-300" alt="ZADIYAH London Rain EDT">
+          </div>
+
+          <div id="thumbnail-list" class="w-20 md:w-24 h-full flex flex-col items-center gap-2 relative py-1 flex-shrink-0">
+            <div id="thumb-scroll-container" class="flex-grow w-full flex flex-col items-center gap-3 overflow-y-auto pr-1">
               
-              <!-- Overlay Navigation Arrows for Main Display (Hidden, visible on hover) -->
-              <button onclick="prevGalleryImage()" aria-label="Previous image" class="absolute left-3 top-1/2 -translate-y-1/2 w-9 h-9 bg-black/60 text-white rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity hover:bg-black/80 border border-white/20"><i class="fas fa-chevron-left text-sm"></i></button>
-              <button onclick="nextGalleryImage()" aria-label="Next image" class="absolute right-3 top-1/2 -translate-y-1/2 w-9 h-9 bg-black/60 text-white rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity hover:bg-black/80 border border-white/20"><i class="fas fa-chevron-right text-sm"></i></button>
+              <img src="images/1784682926466.jpg" onclick="selectGalleryImage(0, this)" class="w-full h-16 object-cover border-2 border-[#D4AF37] rounded clickable-thumbnail cursor-pointer transition-all" alt="ZADIYAH London Rain in Garden">
               
-              <!-- Subtle indicators dots inside Main Display -->
-              <div id="gallery-dots" class="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2">
-                <span class="w-2.5 h-2.5 rounded-full border border-white active-dot bg-white"></span>
-                <span class="w-2.5 h-2.5 rounded-full border border-white inactive-dot bg-transparent"></span>
-                <span class="w-2.5 h-2.5 rounded-full border border-white inactive-dot bg-transparent"></span>
-                <span class="w-2.5 h-2.5 rounded-full border border-white inactive-dot bg-transparent"></span>
-                <span class="w-2.5 h-2.5 rounded-full border border-white inactive-dot bg-transparent"></span>
-                <span class="w-2.5 h-2.5 rounded-full border border-white inactive-dot bg-transparent"></span>
-              </div>
+              <img src="images/bottle.jpg" onclick="selectGalleryImage(1, this)" class="w-full h-16 object-cover border-2 border-[#1A1A1A] rounded clickable-thumbnail cursor-pointer opacity-70 hover:opacity-100 transition-all" alt="ZADIYAH Bottle Detail">
+              
+              <img src="images/pomelli_photoshoot_image_9_16_0829.png" onclick="selectGalleryImage(2, this)" class="w-full h-16 object-cover border-2 border-[#1A1A1A] rounded clickable-thumbnail cursor-pointer opacity-70 hover:opacity-100 transition-all" alt="London Rain Photoshoot">
+              
+              <img src="images/pomelli_photoshoot_image_9_16_0829 (1).png" onclick="selectGalleryImage(3, this)" class="w-full h-16 object-cover border-2 border-[#1A1A1A] rounded clickable-thumbnail cursor-pointer opacity-70 hover:opacity-100 transition-all" alt="London Rain Atmosphere">
+              
+              <img src="images/1784682913725.jpg" onclick="selectGalleryImage(4, this)" class="w-full h-16 object-cover border-2 border-[#1A1A1A] rounded clickable-thumbnail cursor-pointer opacity-70 hover:opacity-100 transition-all" alt="ZADIYAH Meadow Setting">
+              
+              <img src="images/scent_pyramid.jpg" onclick="selectGalleryImage(5, this)" class="w-full h-16 object-cover border-2 border-[#1A1A1A] rounded clickable-thumbnail cursor-pointer opacity-70 hover:opacity-100 transition-all" alt="London Rain Notes Pyramid">
+
             </div>
-            
-            <!-- Vertical List of Thumbnail Images to the Right -->
-            <div id="thumbnail-list" class="w-24 md:w-28 h-full flex flex-col items-center gap-2 relative py-1 flex-shrink-0">
-              
-              <!-- Small Nav Arrows for Thumbnail Stack -->
-              <button onclick="scrollThumbsUp()" aria-label="Scroll thumbnails up" class="w-full flex items-center justify-center h-5 text-[#A0883E] hover:text-[#CBB573] transition-colors"><i class="fas fa-chevron-up text-xs"></i></button>
-              
-              <!-- Vertical scroll container for thumbnails -->
-              <div id="thumb-scroll-container" class="flex-grow w-full flex flex-col items-center gap-3 overflow-y-auto pr-1 scrollbar-none max-h-[380px]">
-               <img src="images/1784682926466.jpg" onclick="selectGalleryImage(0, this)" class="w-full h-16 object-cover border-2 border-[#D4AF37] rounded active-thumbnail clickable-thumbnail cursor-pointer transition-all" alt="ZADIYAH London Rain Garden">
-                <img src="images/bottle.jpg" onclick="selectGalleryImage(1, this)" class="w-full h-16 object-cover border-2 border-[#1A1A1A] rounded clickable-thumbnail cursor-pointer opacity-70 hover:opacity-100 transition-all" alt="ZADIYAH Bottle detail">
-                <img src="images/1784682913725.jpg" onclick="selectGalleryImage(2, this)" class="w-full h-16 object-cover border-2 border-[#1A1A1A] rounded clickable-thumbnail cursor-pointer opacity-70 hover:opacity-100 transition-all" alt="ZADIYAH Garden path">
-                <img src="images/1784682926466.jpg" onclick="selectGalleryImage(3, this)" class="w-full h-16 object-cover border-2 border-[#1A1A1A] rounded clickable-thumbnail cursor-pointer opacity-70 hover:opacity-100 transition-all" alt="ZADIYAH Garden meadow">
-                <img src="images/banner.jjpg.jpeg" onclick="selectGalleryImage(4, this)" class="w-full h-16 object-cover border-2 border-[#1A1A1A] rounded clickable-thumbnail cursor-pointer opacity-70 hover:opacity-100 transition-all" alt="ZADIYAH Marketing Price">
-                <img src="images/scent_pyramid.jpg" onclick="selectGalleryImage(5, this)" class="w-full h-16 object-cover border-2 border-[#1A1A1A] rounded clickable-thumbnail cursor-pointer opacity-70 hover:opacity-100 transition-all" alt="ZADIYAH Scent Pyramid Infographic">
-              </div>
-              
-              <button onclick="scrollThumbsDown()" aria-label="Scroll thumbnails down" class="w-full flex items-center justify-center h-5 text-[#A0883E] hover:text-[#CBB573] transition-colors"><i class="fas fa-chevron-down text-xs"></i></button>
-            </div>
+          </div>
+
+        </div>
             
             <!-- Tagline -->
             <div class="absolute bottom-2 left-6 text-[#777] text-xs font-serif italic tracking-wider">The Smell of Rain, Bottled.</div>
