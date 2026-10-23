@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18412501496"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-18412501496');
+  </script>
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ZADIYAH — London Rain | Eau de Toilette</title>
@@ -50,7 +60,7 @@
   <div id="announcement-bar" class="relative z-[60] bg-charcoal border-b border-gold/10 transition-[margin] duration-300">
     <div class="max-w-[1440px] mx-auto px-6 flex items-center justify-center h-9">
       <p class="text-[9px] md:text-[10px] tracking-[0.35em] uppercase text-gold font-medium text-center">
-        <svg class="inline w-3 h-3 mr-1.5 -mt-px opacity-70" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 00-10.026 0 1.106 1.106 0 00-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12"/></svg>
+        <svg class="inline w-3 h-3 mr-1.5 -mt-px opacity-70" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.7[...]
         Complimentary Express Delivery on All UK Orders
       </p>
     </div>
@@ -76,6 +86,7 @@
           <a href="#story" class="text-[11px] tracking-[0.2em] uppercase text-slate hover:text-warmwhite transition-colors duration-300">Story</a>
           <a href="#experience" class="text-[11px] tracking-[0.2em] uppercase text-slate hover:text-warmwhite transition-colors duration-300">Experience</a>
           <a href="#contact" class="text-[11px] tracking-[0.2em] uppercase text-slate hover:text-[#D4AF37] transition-colors duration-300">Contact Us</a>
+          <a href="#faq" class="text-[11px] tracking-[0.2em] uppercase text-slate hover:text-warmwhite transition-colors duration-300">FAQ</a>
         </nav>
 
         <!-- Right Actions -->
@@ -85,7 +96,7 @@
           <!-- Bag Trigger -->
           <button id="bag-trigger" onclick="toggleDrawer()" class="relative group flex items-center gap-2 text-slate hover:text-warmwhite transition-colors duration-300" aria-label="Open shopping bag">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"/>
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.25 8.25h13.5a1.125 1.125 0 011.125 1.257z"/>
             </svg>
             <span class="hidden md:inline text-[11px] tracking-[0.15em] uppercase">Bag</span>
             <span id="bag-count" class="absolute -top-2 -right-3 md:-right-2 w-4 h-4 bg-gold text-obsidian text-[9px] font-bold rounded-full flex items-center justify-center opacity-0 transition-opacity duration-300">0</span>
@@ -155,63 +166,51 @@
           </p>
 
           <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-fade-in-up opacity-0 animate-delay-4" style="animation-fill-mode: forwards;">
-            <a href="#notes" id="hero-cta-discover" class="btn-outline-gold inline-flex items-center justify-center px-8 py-4 border border-gold text-gold text-[11px] tracking-[0.2em] uppercase hover:text-obsidian transition-colors duration-400">
+            <a href="#notes" id="hero-cta-discover" class="btn-outline-gold inline-flex items-center justify-center px-8 py-4 border border-gold text-gold text-[11px] tracking-[0.2em] uppercase hover:text-obsidian transition-colors duration-300">
               Discover the Scent
             </a>
-            <button id="hero-cta-add" onclick="addToCart()" class="btn-gold inline-flex items-center justify-center px-8 py-4 bg-gold text-obsidian text-[11px] tracking-[0.2em] uppercase font-semibold hover:bg-champagne transition-colors duration-300">
-              Add to Bag — £14.99
+            <button id="hero-cta-add" onclick="addToCart()" class="btn-gold inline-flex items-center justify-center px-8 py-4 bg-gold text-obsidian text-[11px] tracking-[0.2em] uppercase font-semibold hover:bg-[#E0C06B] transition-colors duration-300">
+              Add to Bag — £9.99
             </button>
           </div>
         </div>
 
         <!-- Right Product Display Container (Marketplace-style Carousel) -->
-        <div id="product-display" class="order-1 lg:order-2 w-full max-w-xl h-[460px] md:h-[500px] relative border border-[#1A1A1A] bg-[#0A0A0A] px-4 md:px-8 py-6 flex flex-col justify-center items-center text-center rounded-lg animate-fade-in opacity-0" style="animation-fill-mode: forwards; animation-delay: 0.5s;">
+        <div id="product-display" class="order-1 lg:order-2 w-full max-w-xl h-[460px] md:h-[500px] relative border border-[#1A1A1A] bg-[#0A0A0A] px-4 md:px-8 py-6 flex flex-col justify-center items-center text-center rounded-xl">
           
           <!-- Marketplace-style Carousel Structure -->
           <div id="product-gallery" class="w-full h-full flex flex-row items-center gap-4 md:gap-6 relative">
-            
-            <!-- Primary Large Main Display -->
-            <div id="main-product-display" class="flex-grow h-full relative border border-[#1A1A1A] rounded-md overflow-hidden group bg-black/40">
-              <!-- Main active image (Default: bottle.jpg, the primary product shot) -->
-              <img src="images/bottle.jpg" id="active-product-image" class="w-full h-full object-contain p-4 transition-opacity duration-300" alt="ZADIYAH London Rain EDT Main View">
-              
-              <!-- Overlay Navigation Arrows for Main Display (Hidden, visible on hover) -->
-              <button onclick="prevGalleryImage()" aria-label="Previous image" class="absolute left-3 top-1/2 -translate-y-1/2 w-9 h-9 bg-black/60 text-white rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity hover:bg-black/80 border border-white/20"><i class="fas fa-chevron-left text-sm"></i></button>
-              <button onclick="nextGalleryImage()" aria-label="Next image" class="absolute right-3 top-1/2 -translate-y-1/2 w-9 h-9 bg-black/60 text-white rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity hover:bg-black/80 border border-white/20"><i class="fas fa-chevron-right text-sm"></i></button>
-              
-              <!-- Subtle indicators dots inside Main Display -->
-              <div id="gallery-dots" class="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2">
-                <span class="w-2.5 h-2.5 rounded-full border border-white active-dot bg-white"></span>
-                <span class="w-2.5 h-2.5 rounded-full border border-white inactive-dot bg-transparent"></span>
-                <span class="w-2.5 h-2.5 rounded-full border border-white inactive-dot bg-transparent"></span>
-                <span class="w-2.5 h-2.5 rounded-full border border-white inactive-dot bg-transparent"></span>
+
+            <div id="main-product-display" class="flex-grow h-full relative border border-[#1A1A1A] rounded-md overflow-hidden bg-black/40 flex items-center justify-center p-4">
+              <img src="images/bottle.jpg" id="active-product-image" class="w-full h-full max-h-[420px] object-contain transition-opacity duration-300" alt="ZADIYAH London Rain EDT">
+            </div>
+
+            <div id="thumbnail-list" class="w-20 md:w-24 h-full flex flex-col items-center gap-2 relative py-1 flex-shrink-0">
+              <div id="thumb-scroll-container" class="flex-grow w-full flex flex-col items-center gap-3 overflow-y-auto pr-1">
+                
+                <img src="images/bottle.jpg" onclick="selectGalleryImage(0, this)" class="w-full h-16 object-cover border-2 border-[#D4AF37] rounded clickable-thumbnail cursor-pointer transition-all duration-300" alt="Bottle Detail">
+
+                <img src="images/1784682926466.jpg" onclick="selectGalleryImage(1, this)" class="w-full h-16 object-cover border-2 border-[#1A1A1A] rounded clickable-thumbnail cursor-pointer opacity-70 hover:opacity-100 transition-all duration-300" alt="London Rain in Garden">
+                
+                <img src="images/pomelli_photoshoot_image_9_16_0829.png" onclick="selectGalleryImage(2, this)" class="w-full h-16 object-cover border-2 border-[#1A1A1A] rounded clickable-thumbnail cursor-pointer opacity-70 hover:opacity-100 transition-all duration-300" alt="London Rain Photoshoot">
+                
+                <img src="images/pomelli_photoshoot_image_9_16_0829 (1).png" onclick="selectGalleryImage(3, this)" class="w-full h-16 object-cover border-2 border-[#1A1A1A] rounded clickable-thumbnail cursor-pointer opacity-70 hover:opacity-100 transition-all duration-300" alt="London Rain Atmosphere">
+                
+                <img src="images/1784682913725.jpg" onclick="selectGalleryImage(4, this)" class="w-full h-16 object-cover border-2 border-[#1A1A1A] rounded clickable-thumbnail cursor-pointer opacity-70 hover:opacity-100 transition-all duration-300" alt="ZADIYAH Meadow Setting">
+                
+                <img src="images/scent_pyramid.jpg" onclick="selectGalleryImage(5, this)" class="w-full h-16 object-cover border-2 border-[#1A1A1A] rounded clickable-thumbnail cursor-pointer opacity-70 hover:opacity-100 transition-all duration-300" alt="London Rain Notes Pyramid">
+
               </div>
             </div>
+
+          </div>
             
-            <!-- Vertical List of Thumbnail Images to the Right -->
-            <div id="thumbnail-list" class="w-24 md:w-28 h-full flex flex-col items-center gap-2 relative py-1 flex-shrink-0">
-              
-              <!-- Small Nav Arrows for Thumbnail Stack -->
-              <button onclick="scrollThumbsUp()" aria-label="Scroll thumbnails up" class="w-full flex items-center justify-center h-5 text-[#A0883E] hover:text-[#CBB573] transition-colors"><i class="fas fa-chevron-up text-xs"></i></button>
-              
-              <!-- Vertical scroll container for thumbnails -->
-              <div id="thumb-scroll-container" class="flex-grow w-full flex flex-col items-center gap-3 overflow-y-auto pr-1 scrollbar-none max-h-[380px]">
-                <img src="images/bottle.jpg" onclick="selectGalleryImage(0, this)" class="w-full h-16 object-cover border-2 border-[#A0883E] rounded active-thumbnail clickable-thumbnail cursor-pointer transition-all" alt="ZADIYAH Bottle detail">
-                <img src="images/1784682913725.jpg" onclick="selectGalleryImage(1, this)" class="w-full h-16 object-cover border-2 border-[#1A1A1A] rounded clickable-thumbnail cursor-pointer opacity-70 hover:opacity-100 transition-all" alt="ZADIYAH Garden path">
-                <img src="images/1784682926466.jpg" onclick="selectGalleryImage(2, this)" class="w-full h-16 object-cover border-2 border-[#1A1A1A] rounded clickable-thumbnail cursor-pointer opacity-70 hover:opacity-100 transition-all" alt="ZADIYAH Garden meadow">
-                <img src="images/scent_pyramid.jpg" onclick="selectGalleryImage(3, this)" class="w-full h-16 object-cover border-2 border-[#1A1A1A] rounded clickable-thumbnail cursor-pointer opacity-70 hover:opacity-100 transition-all" alt="ZADIYAH Scent Pyramid Infographic">
-              </div>
-              
-              <button onclick="scrollThumbsDown()" aria-label="Scroll thumbnails down" class="w-full flex items-center justify-center h-5 text-[#A0883E] hover:text-[#CBB573] transition-colors"><i class="fas fa-chevron-down text-xs"></i></button>
-            </div>
-            
-            <!-- Tagline -->
-            <div class="absolute bottom-2 left-6 text-[#777] text-xs font-serif italic tracking-wider">The Smell of Rain, Bottled.</div>
-            
-            <!-- Red Navigation Point -->
-            <div class="absolute top-1/2 -translate-y-1/2 right-[-1.5rem] md:right-[-2.5rem] w-7 h-7 rounded-full border-2 border-[#E13B30] flex items-center justify-center z-10 hidden sm:flex">
-              <span class="w-3.5 h-3.5 rounded-full bg-[#E13B30]"></span>
-            </div>
+          <!-- Tagline -->
+          <div class="absolute bottom-2 left-6 text-[#777] text-xs font-serif italic tracking-wider">The Smell of Rain, Bottled.</div>
+          
+          <!-- Red Navigation Point -->
+          <div class="absolute top-1/2 -translate-y-1/2 right-[-1.5rem] md:right-[-2.5rem] w-7 h-7 rounded-full border-2 border-[#E13B30] flex items-center justify-center z-10 hidden sm:flex">
+            <span class="w-3.5 h-3.5 rounded-full bg-[#E13B30]"></span>
           </div>
         </div>
       </div>
@@ -226,433 +225,228 @@
 
 
   <!-- ========================================
-       2B. VIDEO SHOWCASE
+       3. OLFACTORY NOTES — SCENT PYRAMID
   ========================================= -->
-  <section id="video" class="relative py-24 md:py-32 bg-obsidian">
-    <div class="max-w-4xl mx-auto px-6 lg:px-12">
-      <div class="text-center mb-14 reveal">
-        <p class="text-[10px] tracking-[0.4em] uppercase text-gold mb-4">In Motion</p>
-        <h2 class="font-serif text-3xl md:text-4xl lg:text-5xl font-light text-warmwhite">Watch the Story Unfold</h2>
-        <div class="gold-divider w-20 mx-auto mt-6"></div>
-      </div>
-
-      <div class="relative reveal">
-        <div class="absolute -inset-4 bg-gradient-to-br from-gold/5 via-transparent to-gold/5 rounded-lg blur-2xl"></div>
-        <video controls playsinline poster="images/Zadiyah_IMG_front.jpg" class="w-full aspect-video object-cover rounded-lg shadow-xl relative border border-white/5">
-          <source src="images/brand_video.mp4" type="video/mp4">
-        </video>
-      </div>
+  <!-- Video Showcase Section -->
+  <section class="max-w-5xl mx-auto px-4 py-16">
+    <div class="text-center mb-8">
+      <p class="text-[10px] tracking-[0.4em] uppercase text-gold mb-2">In Motion</p>
+      <h2 class="font-serif text-3xl md:text-4xl text-warmwhite">Watch the Story Unfold</h2>
+      <div class="w-12 h-px bg-gold/40 mx-auto mt-4"></div>
+    </div>
+    <div class="relative rounded-2xl overflow-hidden border border-gold/30 shadow-2xl bg-charcoal max-w-4xl mx-auto">
+      <video autoplay muted loop playsinline controls preload="auto" class="w-full h-auto block">
+        <source src="images/brand_video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
     </div>
   </section>
 
-
-  <!-- ========================================
-       3. OLFACTORY NOTES — SCENT PYRAMID
-  ========================================= -->
+  <!-- 3. OLFACTORY NOTES — SCENT PYRAMID -->
   <section id="notes" class="relative py-24 md:py-32 lg:py-40 bg-charcoal">
     <div class="max-w-[1440px] mx-auto px-6 lg:px-12">
-
+      
       <!-- Section Header -->
       <div class="text-center mb-20 reveal">
         <p class="text-[10px] tracking-[0.4em] uppercase text-gold mb-4">Olfactory Architecture</p>
         <h2 class="font-serif text-4xl md:text-5xl lg:text-6xl font-light mb-3">The Scent Pyramid</h2>
         <p class="font-serif italic text-lg md:text-xl text-gold/90 mb-6">"The smell of rain, bottled."</p>
-        <div class="gold-divider w-20 mx-auto mb-6"></div>
+        <div class="w-20 h-px bg-gold/40 mx-auto mb-6"></div>
         <p class="text-sm text-slate max-w-lg mx-auto leading-relaxed">A meticulously composed trilogy of olfactory layers, unfolding like rain upon warm stone.</p>
       </div>
 
-      <!-- Tab Navigation -->
-      <div class="flex justify-center gap-8 md:gap-12 mb-16 reveal">
-        <button class="scent-tab active text-[11px] tracking-[0.2em] uppercase text-gold pb-2 cursor-pointer" onclick="switchScentTab('top')" id="tab-top">Top</button>
-        <button class="scent-tab text-[11px] tracking-[0.2em] uppercase text-slate pb-2 cursor-pointer" onclick="switchScentTab('heart')" id="tab-heart">Heart</button>
-        <button class="scent-tab text-[11px] tracking-[0.2em] uppercase text-slate pb-2 cursor-pointer" onclick="switchScentTab('base')" id="tab-base">Base</button>
+      <!-- Scent Pyramid Infographic Image -->
+      <div class="max-w-3xl mx-auto mb-16 rounded-2xl overflow-hidden border border-white/10 shadow-2xl">
+        <img src="images/scent_pyramid.jpg" alt="ZADIYAH London Rain Scent Pyramid" class="w-full h-auto block" />
       </div>
 
-      <!-- Notes Grid -->
-      <div class="grid md:grid-cols-3 gap-6 lg:gap-8">
-
+      <!-- Three-Tier Notes Breakdown -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto text-left">
         <!-- Top Notes -->
-        <div class="scent-card bg-obsidian/50 border border-white/5 rounded-lg p-8 lg:p-10 reveal" data-scent="top">
-          <div class="flex items-center gap-3 mb-6">
-            <div class="w-8 h-8 rounded-full bg-gold/10 flex items-center justify-center">
-              <svg class="w-4 h-4 text-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0v-1.5A.75.75 0 0110 2zm0 13a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0v-1.5A.75.75 0 0110 15zm8-5a.75.75 0 01-.75.75h-1.5a.75.75 0 010-1.5h1.5A.75.75 0 0118 10zM5 10a.75.75 0 01-.75.75h-1.5a.75.75 0 010-1.5h1.5A.75.75 0 015 10z"/></svg>
-            </div>
-            <div>
-              <p class="text-[9px] tracking-[0.3em] uppercase text-gold">Top Notes</p>
-              <p class="text-[10px] text-slate/50 mt-0.5">0 — 15 minutes</p>
-            </div>
-          </div>
-          <h3 class="font-serif text-2xl mb-4 text-warmwhite">The First Drops</h3>
-          <p class="text-sm text-slate/70 leading-relaxed mb-6">The scent opens with a vibrant, green citrus sparkle paired with the unmistakable damp earthiness of petrichor.</p>
-          <ul class="space-y-3">
-            <li class="flex items-center gap-3 text-sm text-slate">
-              <span class="w-1.5 h-1.5 rounded-full bg-gold/60"></span>
-              Bitter Orange
-            </li>
-            <li class="flex items-center gap-3 text-sm text-slate">
-              <span class="w-1.5 h-1.5 rounded-full bg-gold/60"></span>
-              Petitgrain
-            </li>
-            <li class="flex items-center gap-3 text-sm text-slate">
-              <span class="w-1.5 h-1.5 rounded-full bg-gold/60"></span>
-              Geosmin
-            </li>
-          </ul>
+        <div class="p-8 bg-obsidian/60 border border-white/10 rounded-xl hover:border-gold/30 transition-all duration-300">
+          <p class="text-[10px] tracking-[0.3em] uppercase text-gold mb-3">Top Notes • 0–30 Mins</p>
+          <h3 class="font-serif text-xl text-warmwhite mb-3">Petrichor & Bergamot</h3>
+          <p class="text-xs text-slate leading-relaxed">Bitter orange, crisp morning ozone, and the fresh mineral aroma of raindrops hitting dry London pavement.</p>
         </div>
 
         <!-- Heart Notes -->
-        <div class="scent-card bg-obsidian/50 border border-white/5 rounded-lg p-8 lg:p-10 reveal" data-scent="heart">
-          <div class="flex items-center gap-3 mb-6">
-            <div class="w-8 h-8 rounded-full bg-gold/10 flex items-center justify-center">
-              <svg class="w-4 h-4 text-gold" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"/></svg>
-            </div>
-            <div>
-              <p class="text-[9px] tracking-[0.3em] uppercase text-gold">Heart Notes</p>
-              <p class="text-[10px] text-slate/50 mt-0.5">15 min — 3 hours</p>
-            </div>
-          </div>
-          <h3 class="font-serif text-2xl mb-4 text-warmwhite">The Downpour</h3>
-          <p class="text-sm text-slate/70 leading-relaxed mb-6">The heart blooms into an aromatic, rain-washed botanical accord — crisp, soothing, and elegantly balanced.</p>
-          <ul class="space-y-3">
-            <li class="flex items-center gap-3 text-sm text-slate">
-              <span class="w-1.5 h-1.5 rounded-full bg-gold/60"></span>
-              Clary Sage
-            </li>
-            <li class="flex items-center gap-3 text-sm text-slate">
-              <span class="w-1.5 h-1.5 rounded-full bg-gold/60"></span>
-              Geranium
-            </li>
-            <li class="flex items-center gap-3 text-sm text-slate">
-              <span class="w-1.5 h-1.5 rounded-full bg-gold/60"></span>
-              Lavender
-            </li>
-          </ul>
+        <div class="p-8 bg-obsidian/60 border border-white/10 rounded-xl hover:border-gold/30 transition-all duration-300">
+          <p class="text-[10px] tracking-[0.3em] uppercase text-gold mb-3">Heart Notes • 30 Mins – 4 Hours</p>
+          <h3 class="font-serif text-xl text-warmwhite mb-3">Clary Sage & Geranium</h3>
+          <p class="text-xs text-slate leading-relaxed">Aromatic English herbs, herbal greens, and fresh floral undertones that evoke rain-swept gardens.</p>
         </div>
 
         <!-- Base Notes -->
-        <div class="scent-card bg-obsidian/50 border border-white/5 rounded-lg p-8 lg:p-10 reveal" data-scent="base">
-          <div class="flex items-center gap-3 mb-6">
-            <div class="w-8 h-8 rounded-full bg-gold/10 flex items-center justify-center">
-              <svg class="w-4 h-4 text-gold" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M5.5 2A3.5 3.5 0 002 5.5v2.879a2.5 2.5 0 00.732 1.767l7.5 7.5a2.5 2.5 0 003.536 0l2.878-2.878a2.5 2.5 0 000-3.536l-7.5-7.5A2.5 2.5 0 007.38 2H5.5zM6 7a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"/></svg>
-            </div>
-            <div>
-              <p class="text-[9px] tracking-[0.3em] uppercase text-gold">Base Notes</p>
-              <p class="text-[10px] text-slate/50 mt-0.5">3 — 8+ hours</p>
-            </div>
-          </div>
-          <h3 class="font-serif text-2xl mb-4 text-warmwhite">The Aftermath</h3>
-          <p class="text-sm text-slate/70 leading-relaxed mb-6">A deep, lingering finish grounded in wet forest woods, velvety moss, and smooth modern warmth.</p>
-          <ul class="space-y-3">
-            <li class="flex items-center gap-3 text-sm text-slate">
-              <span class="w-1.5 h-1.5 rounded-full bg-gold/60"></span>
-              Cedarwood
-            </li>
-            <li class="flex items-center gap-3 text-sm text-slate">
-              <span class="w-1.5 h-1.5 rounded-full bg-gold/60"></span>
-              Vetiver
-            </li>
-            <li class="flex items-center gap-3 text-sm text-slate">
-              <span class="w-1.5 h-1.5 rounded-full bg-gold/60"></span>
-              Oakmoss
-            </li>
-            <li class="flex items-center gap-3 text-sm text-slate">
-              <span class="w-1.5 h-1.5 rounded-full bg-gold/60"></span>
-              ISO E Super
-            </li>
-          </ul>
+        <div class="p-8 bg-obsidian/60 border border-white/10 rounded-xl hover:border-gold/30 transition-all duration-300">
+          <p class="text-[10px] tracking-[0.3em] uppercase text-gold mb-3">Base Notes • 4–8+ Hours</p>
+          <h3 class="font-serif text-xl text-warmwhite mb-3">Cedarwood & Oakmoss</h3>
+          <p class="text-xs text-slate leading-relaxed">Warm amber, Haitian vetiver, and rain-soaked earth providing a long-lasting, sophisticated foundation.</p>
         </div>
       </div>
+
     </div>
   </section>
 
-
-  <!-- ========================================
+  <!-- ==========================================
        4. THE STORY / INSPIRATION
-  ========================================= -->
-  <section id="story" class="relative py-24 md:py-32 lg:py-40 bg-obsidian overflow-hidden">
-
-    <!-- Background Texture -->
-    <div class="absolute inset-0 opacity-[0.03]" style="background-image: url('data:image/svg+xml,<svg width=&quot;60&quot; height=&quot;60&quot; viewBox=&quot;0 0 60 60&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot;><g fill=&quot;none&quot; fill-rule=&quot;evenodd&quot;><g fill=&quot;%23D4AF37&quot; fill-opacity=&quot;0.4&quot;><path d=&quot;M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z&quot;/></g></g></svg>');"></div>
-
-    <div class="max-w-[1440px] mx-auto px-6 lg:px-12">
-      <div class="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
-
-        <!-- Image Column -->
-        <div class="reveal">
-          <div class="relative">
-            <div class="absolute -inset-4 bg-gradient-to-br from-gold/5 via-transparent to-gold/5 rounded-lg blur-2xl"></div>
-            <img src="images/package.jpg" alt="ZADIYAH London Rain — Eau de Toilette 50ml packaging" class="relative w-full h-auto rounded-lg shadow-2xl" />
-            <div class="absolute inset-0 rounded-lg border border-white/5"></div>
-          </div>
-        </div>
-
-        <!-- Editorial Text -->
-        <div class="reveal">
-          <p class="text-[10px] tracking-[0.4em] uppercase text-gold mb-6">The ZADIYAH Story</p>
-          <h2 class="font-serif text-3xl md:text-4xl lg:text-5xl font-light mb-8 leading-tight">
-            Born from<br/>
-            <span class="italic text-gold/80">British Rain</span>
-          </h2>
-          <div class="space-y-6 text-sm md:text-[15px] text-slate/80 leading-relaxed">
-            <p>
-              London Rain was conceived during an October evening walk across Waterloo Bridge — that rare moment when the city
-              pauses beneath a violet sky and the first heavy drops of rain transform the streets into rivers of reflected gold.
-            </p>
-            <p>
-              Every bottle is a small-batch formulation, hand-poured in our East London atelier. We source only
-              the finest cruelty-free, ethically traded ingredients — from Calabrian bergamot to sustainably harvested
-              Haitian vetiver — ensuring each spray tells an honest story.
-            </p>
-            <p>
-              We believe in the power of scent to transcend the ordinary. London Rain isn't merely a fragrance.
-              It's a sensory memoir — an invitation to carry the city's most poetic moment with you, wherever you go.
-            </p>
-          </div>
-
-          <!-- USP Badges -->
-          <div class="flex flex-wrap gap-4 mt-10">
-            <span class="inline-flex items-center gap-2 px-4 py-2 bg-white/5 border border-white/10 rounded-full text-[10px] tracking-[0.15em] uppercase text-slate">
-              <svg class="w-3.5 h-3.5 text-gold" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              Small-Batch
-            </span>
-            <span class="inline-flex items-center gap-2 px-4 py-2 bg-white/5 border border-white/10 rounded-full text-[10px] tracking-[0.15em] uppercase text-slate">
-              <svg class="w-3.5 h-3.5 text-gold" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              Cruelty-Free
-            </span>
-            <span class="inline-flex items-center gap-2 px-4 py-2 bg-white/5 border border-white/10 rounded-full text-[10px] tracking-[0.15em] uppercase text-slate">
-              <svg class="w-3.5 h-3.5 text-gold" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              Hand-Poured
-            </span>
-            <span class="inline-flex items-center gap-2 px-4 py-2 bg-white/5 border border-white/10 rounded-full text-[10px] tracking-[0.15em] uppercase text-slate">
-              <svg class="w-3.5 h-3.5 text-gold" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-              Made in the UK
-            </span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ========================================
-       5. BUY BOX / PRODUCT SHOWCASE
-  ========================================= -->
-  <section id="experience" class="relative py-24 md:py-32 lg:py-40 bg-charcoal">
-    <div class="max-w-xl mx-auto px-6">
+       ========================================== -->
+  <section id="story" class="relative py-24 md:py-32 bg-obsidian overflow-hidden border-t border-white/5">
+    <div class="max-w-3xl mx-auto px-6 lg:px-8 text-center">
       
-      <!-- Buy Details Container -->
-      <div class="reveal">
-        <div class="text-center mb-8">
-          <p class="text-[10px] tracking-[0.4em] uppercase text-gold mb-3">Eau de Toilette</p>
-          <h2 class="font-serif text-4xl md:text-5xl font-light mb-2">London Rain</h2>
-          <p class="text-sm text-slate mb-6">50ml / 1.7 fl. oz.</p>
+      <p class="text-[10px] tracking-[0.4em] uppercase text-gold mb-3">The ZADIYAH Story</p>
+      <h2 class="font-serif text-3xl md:text-5xl lg:text-6xl text-warmwhite font-light leading-tight mb-8">
+        Born from <br><span class="italic text-gold/80">British Rain</span>
+      </h2>
 
-          <div class="flex items-baseline justify-center gap-4">
-            <span class="font-serif text-3xl md:text-4xl text-warmwhite">£14.99</span>
-            <span class="text-[11px] text-slate/50 tracking-wide">Tax included</span>
-          </div>
-        </div>
+      <div class="w-16 h-px bg-gold/40 mx-auto mb-10"></div>
 
-        <!-- Quantity Selector -->
-        <div class="flex items-center justify-center gap-6 mb-8">
-          <span class="text-[11px] tracking-[0.2em] uppercase text-slate">Quantity</span>
-          <div class="flex items-center border border-white/10 rounded">
-            <button id="qty-minus" onclick="adjustQty(-1)" class="w-11 h-11 flex items-center justify-center text-slate hover:text-warmwhite hover:bg-white/5 transition-all duration-200" aria-label="Decrease quantity">
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" d="M5 12h14"/></svg>
-            </button>
-            <span id="qty-display" class="w-12 h-11 flex items-center justify-center text-sm font-medium text-warmwhite border-x border-white/10">1</span>
-            <button id="qty-plus" onclick="adjustQty(1)" class="w-11 h-11 flex items-center justify-center text-slate hover:text-warmwhite hover:bg-white/5 transition-all duration-200" aria-label="Increase quantity">
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" d="M12 5v14M5 12h14"/></svg>
-            </button>
-          </div>
-        </div>
-
-        <!-- Add to Cart -->
-        <button id="buy-add-to-cart" onclick="addToCart()" class="btn-gold w-full py-4 bg-gold text-obsidian text-[12px] tracking-[0.2em] uppercase font-semibold hover:bg-champagne transition-all duration-300 mb-5 shadow-lg">
-          Add to Cart
-        </button>
-
-        <!-- Trust Badges -->
-        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 mb-4">
-          <span class="inline-flex items-center gap-2 text-[11px] tracking-[0.1em] text-slate">
-            <svg class="w-4 h-4 text-gold flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-            Free UK-Wide Delivery
-          </span>
-          <span class="inline-flex items-center gap-2 text-[11px] tracking-[0.1em] text-slate">
-            <svg class="w-4 h-4 text-gold flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-            Hand-Poured in the UK
-          </span>
-        </div>
-
-        <p class="text-[11px] text-slate/40 text-center mb-12">
-          <svg class="inline w-3.5 h-3.5 mr-1 -mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z"/></svg>
-          Secure checkout · SSL encrypted
+      <div class="space-y-6 text-sm md:text-base text-slate leading-relaxed">
+        <p>
+          London Rain was conceived during an October evening walk across Waterloo Bridge — that rare moment when the city pauses beneath a violet sky and the first heavy drops of rain transform the streets into rivers of reflected gold.
         </p>
+        <p>
+          Every bottle is a small-batch formulation hand-poured in the United Kingdom. We source ethically traded ingredients — from Calabrian bergamot to sustainably harvested Haitian vetiver — ensuring each spray tells an honest story.
+        </p>
+      </div>
 
-        <!-- Accordions -->
-        <div class="border-t border-white/10 text-left">
+      <div class="pt-10 flex flex-wrap justify-center gap-4 text-[11px] tracking-[0.15em] uppercase text-gold">
+        <span class="px-4 py-2 border border-gold/30 rounded-full bg-gold/5">Small-Batch</span>
+        <span class="px-4 py-2 border border-gold/30 rounded-full bg-gold/5">Cruelty-Free</span>
+        <span class="px-4 py-2 border border-gold/30 rounded-full bg-gold/5">Hand-Poured in the UK</span>
+      </div>
 
-          <!-- Accordion: Ingredients & Safety -->
-          <div class="border-b border-white/10">
-            <button id="accordion-ingredients-trigger" class="accordion-trigger flex items-center justify-between w-full py-5 text-left" onclick="toggleAccordion('ingredients')">
-              <span class="text-[12px] tracking-[0.15em] uppercase text-warmwhite">Ingredients &amp; Safety</span>
-              <span class="accordion-icon text-gold text-xl leading-none" id="accordion-icon-ingredients">+</span>
-            </button>
-            <div class="accordion-content text-sm text-slate/70 leading-relaxed" id="accordion-ingredients">
-              <div class="pb-6">
-                <p class="mb-3"><strong class="text-slate">Key Ingredients:</strong> Alcohol Denat., Aqua, Parfum (Fragrance), Limonene, Linalool, Citral, Geraniol, Coumarin, Citronellol.</p>
-                <p class="mb-3"><strong class="text-slate">Concentration:</strong> Eau de Toilette (8–12% fragrance oils)</p>
-                <p><strong class="text-slate">Safety:</strong> Dermatologically tested. For external use only. Avoid contact with eyes and broken skin. Keep out of reach of children. Store away from heat and direct sunlight.</p>
-              </div>
-            </div>
-          </div>
+    </div>
+  </section>
 
-          <!-- Accordion: Shipping & Returns -->
-          <div class="border-b border-white/10">
-            <button id="accordion-shipping-trigger" class="accordion-trigger flex items-center justify-between w-full py-5 text-left" onclick="toggleAccordion('shipping')">
-              <span class="text-[12px] tracking-[0.15em] uppercase text-warmwhite">Shipping &amp; Returns</span>
-              <span class="accordion-icon text-gold text-xl leading-none" id="accordion-icon-shipping">+</span>
-            </button>
-            <div class="accordion-content text-sm text-slate/70 leading-relaxed" id="accordion-shipping">
-              <div class="pb-6">
-                <p class="mb-3 flex items-center gap-2">
-                  <svg class="w-4 h-4 text-gold flex-shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-                  <strong class="text-gold">Free Express UK Delivery</strong> via Royal Mail Tracked 48
-                </p>
-                <p class="mb-3">Dispatched within 48 hours of order confirmation.</p>
-                <p class="mb-3">International shipping available — rates calculated at checkout.</p>
-                <p>Returns accepted within 14 days of delivery. Items must be unopened and in original packaging. Contact <em>returns@zadiyah.uk</em> to initiate a return.</p>
-              </div>
-            </div>
-          </div>
-
+  <!-- ==========================================
+       5. THE RITUAL / EXPERIENCE
+       ========================================== -->
+  <section id="experience" class="relative py-24 md:py-32 bg-charcoal border-t border-white/5">
+    <div class="max-w-5xl mx-auto px-6 lg:px-12 text-center">
+      <p class="text-[10px] tracking-[0.4em] uppercase text-gold mb-3">Application</p>
+      <h2 class="font-serif text-3xl md:text-5xl text-warmwhite font-light mb-12">The Daily Ritual</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+        <div class="p-6 bg-obsidian/60 border border-white/10 rounded-xl">
+          <p class="font-serif text-2xl text-gold mb-2">01</p>
+          <h3 class="font-serif text-lg text-warmwhite mb-2">Pulse Points</h3>
+          <p class="text-xs text-slate leading-relaxed">Spray 2–3 inches away onto pulse points: collarbones, inner wrists, and behind the ears.</p>
+        </div>
+        <div class="p-6 bg-obsidian/60 border border-white/10 rounded-xl">
+          <p class="font-serif text-2xl text-gold mb-2">02</p>
+          <h3 class="font-serif text-lg text-warmwhite mb-2">Allow to Settle</h3>
+          <p class="text-xs text-slate leading-relaxed">Avoid rubbing wrists together. Let the top notes of ozonic bergamot naturally evolve on your skin.</p>
+        </div>
+        <div class="p-6 bg-obsidian/60 border border-white/10 rounded-xl">
+          <p class="font-serif text-2xl text-gold mb-2">03</p>
+          <h3 class="font-serif text-lg text-warmwhite mb-2">Lingering Trail</h3>
+          <p class="text-xs text-slate leading-relaxed">The cedarwood and vetiver base will develop into an intimate, warm trail lasting 6 to 8 hours.</p>
         </div>
       </div>
     </div>
   </section>
 
-
-  <!-- ========================================
-       6. SOCIAL PROOF / EDITORIAL QUOTES
-  ========================================= -->
-  <section class="relative py-24 md:py-32 lg:py-40 bg-obsidian overflow-hidden">
-    <div class="max-w-[1440px] mx-auto px-6 lg:px-12">
-
-      <div class="text-center mb-16 reveal">
-        <p class="text-[10px] tracking-[0.4em] uppercase text-gold mb-4">Press &amp; Praise</p>
-        <h2 class="font-serif text-3xl md:text-4xl lg:text-5xl font-light">What They Say</h2>
+  <!-- ==========================================
+       6. FAQ SECTION
+       ========================================== -->
+  <section id="faq" class="relative py-24 md:py-32 bg-obsidian border-t border-white/5">
+    <div class="max-w-4xl mx-auto px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <p class="text-[10px] tracking-[0.4em] uppercase text-gold mb-3">Client Inquiries</p>
+        <h2 class="font-serif text-3xl md:text-5xl text-warmwhite font-light">Frequently Asked Questions</h2>
+        <div class="w-12 h-px bg-gold/40 mx-auto mt-6"></div>
       </div>
-
-      <!-- Quote Slider -->
-      <div class="relative max-w-3xl mx-auto text-center reveal" id="quote-slider">
-        <div class="relative min-h-[200px] md:min-h-[180px]">
-          <div class="quote-slide active" data-quote="0">
-            <svg class="w-8 h-8 text-gold/30 mx-auto mb-6" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10H14.017zM0 21v-7.391c0-5.704 3.731-9.57 8.983-10.609L9.978 5.151c-2.432.917-3.995 3.638-3.995 5.849h4v10H0z"/></svg>
-            <blockquote class="font-serif text-2xl md:text-3xl font-light italic text-warmwhite/90 leading-relaxed mb-6">
-              "A masterpiece in modern British perfumery. London Rain captures something genuinely ineffable."
-            </blockquote>
-            <cite class="not-italic text-[11px] tracking-[0.2em] uppercase text-slate">— The Fragrance Journal</cite>
-          </div>
-
-          <div class="quote-slide" data-quote="1">
-            <svg class="w-8 h-8 text-gold/30 mx-auto mb-6" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10H14.017zM0 21v-7.391c0-5.704 3.731-9.57 8.983-10.609L9.978 5.151c-2.432.917-3.995 3.638-3.995 5.849h4v10H0z"/></svg>
-            <blockquote class="font-serif text-2xl md:text-3xl font-light italic text-warmwhite/90 leading-relaxed mb-6">
-              "Unlike anything else on my shelf. It smells like standing under a warm streetlight while rain drums around you."
-            </blockquote>
-            <cite class="not-italic text-[11px] tracking-[0.2em] uppercase text-slate">— Olivia R., Verified Buyer</cite>
-          </div>
-
-          <div class="quote-slide" data-quote="2">
-            <svg class="w-8 h-8 text-gold/30 mx-auto mb-6" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10H14.017zM0 21v-7.391c0-5.704 3.731-9.57 8.983-10.609L9.978 5.151c-2.432.917-3.995 3.638-3.995 5.849h4v10H0z"/></svg>
-            <blockquote class="font-serif text-2xl md:text-3xl font-light italic text-warmwhite/90 leading-relaxed mb-6">
-              "ZADIYAH has crafted something that feels deeply personal yet universally beautiful. A new essential."
-            </blockquote>
-            <cite class="not-italic text-[11px] tracking-[0.2em] uppercase text-slate">— British Vogue, Beauty Edit</cite>
-          </div>
-
-          <div class="quote-slide" data-quote="3">
-            <svg class="w-8 h-8 text-gold/30 mx-auto mb-6" fill="currentColor" viewBox="0 0 24 24"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10H14.017zM0 21v-7.391c0-5.704 3.731-9.57 8.983-10.609L9.978 5.151c-2.432.917-3.995 3.638-3.995 5.849h4v10H0z"/></svg>
-            <blockquote class="font-serif text-2xl md:text-3xl font-light italic text-warmwhite/90 leading-relaxed mb-6">
-              "I receive compliments every single time I wear it. The longevity on skin is exceptional for an EDT."
-            </blockquote>
-            <cite class="not-italic text-[11px] tracking-[0.2em] uppercase text-slate">— James K., Verified Buyer</cite>
-          </div>
-        </div>
-
-        <!-- Slider Dots -->
-        <div class="flex justify-center gap-3 mt-10" id="quote-dots">
-          <button class="w-2 h-2 rounded-full bg-gold transition-all duration-300" onclick="goToQuote(0)" aria-label="Quote 1"></button>
-          <button class="w-2 h-2 rounded-full bg-white/20 hover:bg-white/40 transition-all duration-300" onclick="goToQuote(1)" aria-label="Quote 2"></button>
-          <button class="w-2 h-2 rounded-full bg-white/20 hover:bg-white/40 transition-all duration-300" onclick="goToQuote(2)" aria-label="Quote 3"></button>
-          <button class="w-2 h-2 rounded-full bg-white/20 hover:bg-white/40 transition-all duration-300" onclick="goToQuote(3)" aria-label="Quote 4"></button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- ========================================
-       7. FOOTER
-  ========================================= -->
-  <footer class="relative bg-obsidian border-t border-white/5">
-
-    <!-- Contact Form Section -->
-    <section id="contact" class="py-20 md:py-28">
-      <div class="max-w-2xl mx-auto px-6">
-        <div class="text-center reveal mb-10">
-          <p class="text-[10px] tracking-[0.4em] uppercase text-gold mb-3">CONCIERGE &amp; INQUIRIES</p>
-          <h3 class="font-serif text-3xl md:text-4xl lg:text-5xl font-light mb-4 text-warmwhite">Get in Touch</h3>
-          <p class="text-sm text-slate/70 leading-relaxed max-w-lg mx-auto">Have a question about London Rain EDT, your order, or press inquiries? Send us a message below or email us directly at <a href="mailto:info@zadiyah.uk" class="text-gold hover:underline">info@zadiyah.uk</a>.</p>
-        </div>
-
-        <form action="mailto:info@zadiyah.uk" method="POST" enctype="text/plain" class="reveal space-y-4">
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div>
-              <input
-                type="text"
-                name="Name"
-                placeholder="Your Name"
-                required
-                class="w-full px-5 py-4 bg-charcoal border border-white/10 text-warmwhite text-sm placeholder:text-slate/40 rounded-none focus:outline-none focus:border-gold transition-colors duration-300"
-              />
-            </div>
-            <div>
-              <input
-                type="email"
-                name="Email"
-                placeholder="Your Email Address"
-                required
-                class="w-full px-5 py-4 bg-charcoal border border-white/10 text-warmwhite text-sm placeholder:text-slate/40 rounded-none focus:outline-none focus:border-gold transition-colors duration-300"
-              />
-            </div>
-          </div>
-          <div>
-            <input
-              type="text"
-              name="Subject"
-              placeholder="Subject (e.g., Order Inquiry, Press)"
-              required
-              class="w-full px-5 py-4 bg-charcoal border border-white/10 text-warmwhite text-sm placeholder:text-slate/40 rounded-none focus:outline-none focus:border-gold transition-colors duration-300"
-            />
-          </div>
-          <div>
-            <textarea
-              name="Message"
-              rows="4"
-              placeholder="How can we assist you?"
-              required
-              class="w-full px-5 py-4 bg-charcoal border border-white/10 text-warmwhite text-sm placeholder:text-slate/40 rounded-none focus:outline-none focus:border-gold transition-colors duration-300 resize-none"
-            ></textarea>
-          </div>
-          <button
-            type="submit"
-            class="btn-gold w-full py-4 bg-gold text-obsidian text-[11px] tracking-[0.2em] uppercase font-semibold hover:bg-champagne transition-all duration-300"
-          >
-            SEND MESSAGE
+      <div class="space-y-4">
+        <div class="border border-white/10 rounded-lg overflow-hidden bg-charcoal/40 transition-colors duration-300 hover:border-gold/30">
+          <button onclick="toggleFaq(this)" class="w-full py-5 px-6 text-left flex items-center justify-between text-warmwhite font-medium text-sm md:text-base focus:outline-none">
+            <span>What does London Rain smell like?</span>
+            <span class="faq-icon text-gold text-lg transition-transform duration-300 ml-4">+</span>
           </button>
-        </form>
+          <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-6">
+            <p class="pb-5 text-sm text-slate leading-relaxed border-t border-white/5 pt-3">
+              It opens with an ozonic burst of petrichor and bitter orange, moves into aromatic clary sage and geranium, and finishes with a warm base of cedarwood, oakmoss, and vetiver.
+            </p>
+          </div>
+        </div>
+        <div class="border border-white/10 rounded-lg overflow-hidden bg-charcoal/40 transition-colors duration-300 hover:border-gold/30">
+          <button onclick="toggleFaq(this)" class="w-full py-5 px-6 text-left flex items-center justify-between text-warmwhite font-medium text-sm md:text-base focus:outline-none">
+            <span>What is the bottle size and concentration?</span>
+            <span class="faq-icon text-gold text-lg transition-transform duration-300 ml-4">+</span>
+          </button>
+          <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-6">
+            <p class="pb-5 text-sm text-slate leading-relaxed border-t border-white/5 pt-3">
+              It is formulated as a 50 ml (1.7 fl. oz.) Eau de Toilette (EDT).
+            </p>
+          </div>
+        </div>
+        <div class="border border-white/10 rounded-lg overflow-hidden bg-charcoal/40 transition-colors duration-300 hover:border-gold/30">
+          <button onclick="toggleFaq(this)" class="w-full py-5 px-6 text-left flex items-center justify-between text-warmwhite font-medium text-sm md:text-base focus:outline-none">
+            <span>How long does the fragrance last?</span>
+            <span class="faq-icon text-gold text-lg transition-transform duration-300 ml-4">+</span>
+          </button>
+          <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-6">
+            <p class="pb-5 text-sm text-slate leading-relaxed border-t border-white/5 pt-3">
+              London Rain provides 3 to 4 hours of noticeable projection and settles into a lingering warm skin scent lasting 6 to 8 hours.
+            </p>
+          </div>
+        </div>
+        <div class="border border-white/10 rounded-lg overflow-hidden bg-charcoal/40 transition-colors duration-300 hover:border-gold/30">
+          <button onclick="toggleFaq(this)" class="w-full py-5 px-6 text-left flex items-center justify-between text-warmwhite font-medium text-sm md:text-base focus:outline-none">
+            <span>Is London Rain cruelty-free and certified safe?</span>
+            <span class="faq-icon text-gold text-lg transition-transform duration-300 ml-4">+</span>
+          </button>
+          <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-6">
+            <p class="pb-5 text-sm text-slate leading-relaxed border-t border-white/5 pt-3">
+              Yes, London Rain is 100% cruelty-free, vegan-friendly, and fully certified under UK and EU Cosmetic Product Safety Regulations (CPSR).
+            </p>
+          </div>
+        </div>
+        <div class="border border-white/10 rounded-lg overflow-hidden bg-charcoal/40 transition-colors duration-300 hover:border-gold/30">
+          <button onclick="toggleFaq(this)" class="w-full py-5 px-6 text-left flex items-center justify-between text-warmwhite font-medium text-sm md:text-base focus:outline-none">
+            <span>Do you ship internationally?</span>
+            <span class="faq-icon text-gold text-lg transition-transform duration-300 ml-4">+</span>
+          </button>
+          <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-6">
+            <p class="pb-5 text-sm text-slate leading-relaxed border-t border-white/5 pt-3">
+              Not at the moment. We currently ship exclusively within the United Kingdom. Any future international shipping updates will be announced on our website.
+            </p>
+          </div>
+        </div>
+        <div class="border border-white/10 rounded-lg overflow-hidden bg-charcoal/40 transition-colors duration-300 hover:border-gold/30">
+          <button onclick="toggleFaq(this)" class="w-full py-5 px-6 text-left flex items-center justify-between text-warmwhite font-medium text-sm md:text-base focus:outline-none">
+            <span>How much is UK delivery and how long does it take?</span>
+            <span class="faq-icon text-gold text-lg transition-transform duration-300 ml-4">+</span>
+          </button>
+          <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-6">
+            <p class="pb-5 text-sm text-slate leading-relaxed border-t border-white/5 pt-3">
+              UK delivery is complimentary on all orders and typically arrives within 2 to 3 working days via tracked courier services.
+            </p>
+          </div>
+        </div>
+        <div class="border border-white/10 rounded-lg overflow-hidden bg-charcoal/40 transition-colors duration-300 hover:border-gold/30">
+          <button onclick="toggleFaq(this)" class="w-full py-5 px-6 text-left flex items-center justify-between text-warmwhite font-medium text-sm md:text-base focus:outline-none">
+            <span>What payment methods are accepted?</span>
+            <span class="faq-icon text-gold text-lg transition-transform duration-300 ml-4">+</span>
+          </button>
+          <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-6">
+            <p class="pb-5 text-sm text-slate leading-relaxed border-t border-white/5 pt-3">
+              All major debit and credit cards (Visa, Mastercard, American Express), Apple Pay, Revolut Pay, Klarna, and Amazon Pay via our secure Stripe checkout.
+            </p>
+          </div>
+        </div>
+        <div class="border border-white/10 rounded-lg overflow-hidden bg-charcoal/40 transition-colors duration-300 hover:border-gold/30">
+          <button onclick="toggleFaq(this)" class="w-full py-5 px-6 text-left flex items-center justify-between text-warmwhite font-medium text-sm md:text-base focus:outline-none">
+            <span>What is your return policy?</span>
+            <span class="faq-icon text-gold text-lg transition-transform duration-300 ml-4">+</span>
+          </button>
+          <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out px-6">
+            <p class="pb-5 text-sm text-slate leading-relaxed border-t border-white/5 pt-3">
+              Unopened and sealed bottles can be returned within 14 days of delivery. Please email <span class="text-gold">info@zadiyah.uk</span> to arrange a return.
+            </p>
+          </div>
+        </div>
       </div>
-    </section>
+    </div>
+  </section>
 
     <!-- VIP Club / Email Waitlist -->
     <section id="vip-club" class="py-20 md:py-24 border-t border-white/5 bg-charcoal">
@@ -684,119 +478,68 @@
       </div>
     </section>
 
-    <!-- Bottom Footer -->
-    <div class="border-t border-white/5 py-8">
-      <div class="max-w-[1440px] mx-auto px-6 lg:px-12">
-        <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+  <!-- ==========================================
+       7. CONTACT & FOOTER
+       ========================================== -->
+  <footer id="contact" class="relative bg-obsidian border-t border-white/5 pt-20 pb-12">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <p class="text-[10px] tracking-[0.4em] uppercase text-gold mb-3">Concierge & Inquiries</p>
+      <h2 class="font-serif text-3xl md:text-4xl text-warmwhite font-light mb-4">Get in Touch</h2>
+      <p class="text-sm text-slate mb-8">Have a question regarding London Rain EDT or your order? Send us a direct inquiry at <a href="mailto:info@zadiyah.uk" class="text-gold underline hover:text-[#E5C15A]">info@zadiyah.uk</a>.</p>
+      
+      <div class="w-full h-px bg-white/10 my-12"></div>
 
-          <!-- Copyright -->
-          <p class="text-[11px] text-slate/50 tracking-wider">
-            &copy; 2026 ZADIYAH. All rights reserved.
-            <a href="https://zadiyah.uk" class="text-slate/60 hover:text-gold transition-colors ml-1">zadiyah.uk</a>
-          </p>
-
-          <!-- Legal Links -->
-          <div class="flex items-center gap-6">
-          <a href="privacy.html" class="text-[10px] tracking-[0.15em] uppercase text-slate/50 hover:text-slate transition-colors">Privacy Policy</a>
-          <a href="terms.html" class="text-[10px] tracking-[0.15em] uppercase text-slate/50 hover:text-slate transition-colors">Terms of Service</a>
-          <a href="cookies.html" class="text-[10px] tracking-[0.15em] uppercase text-slate/50 hover:text-slate transition-colors">Cookie Policy</a>
-          </div>
-
-          <!-- Payment Badges -->
-          <div class="flex items-center gap-4 text-slate/40">
-            <svg class="h-6 w-auto" viewBox="0 0 48 32" fill="currentColor"><rect width="48" height="32" rx="4" fill="currentColor" opacity="0.15"/><text x="24" y="20" text-anchor="middle" font-size="10" font-family="sans-serif" fill="currentColor" font-weight="600">VISA</text></svg>
-            <svg class="h-6 w-auto" viewBox="0 0 48 32" fill="currentColor"><rect width="48" height="32" rx="4" fill="currentColor" opacity="0.15"/><text x="24" y="20" text-anchor="middle" font-size="7" font-family="sans-serif" fill="currentColor" font-weight="600">MC</text></svg>
-            <svg class="h-6 w-auto" viewBox="0 0 48 32" fill="currentColor"><rect width="48" height="32" rx="4" fill="currentColor" opacity="0.15"/><text x="24" y="20" text-anchor="middle" font-size="7" font-family="sans-serif" fill="currentColor" font-weight="600">AMEX</text></svg>
-            <svg class="h-6 w-auto" viewBox="0 0 48 32" fill="currentColor"><rect width="48" height="32" rx="4" fill="currentColor" opacity="0.15"/><text x="24" y="20" text-anchor="middle" font-size="6" font-family="sans-serif" fill="currentColor" font-weight="600">Pay</text></svg>
-          </div>
+      <div class="flex flex-col md:flex-row justify-between items-center gap-6 text-xs text-slate">
+        <p>&copy; 2026 ZADIYAH UK. All rights reserved.</p>
+        <div class="flex gap-6">
+          <a href="privacy.html" class="hover:text-warmwhite transition-colors">Privacy Policy</a>
+          <a href="terms.html" class="hover:text-warmwhite transition-colors">Terms of Service</a>
+          <a href="cookies.html" class="hover:text-warmwhite transition-colors">Cookie Policy</a>
         </div>
       </div>
     </div>
   </footer>
 
+  <!-- ==========================================
+       8. SHOPPING BAG DRAWER
+       ========================================== -->
+  <div id="drawer-overlay" onclick="toggleDrawer()" class="hidden fixed inset-0 bg-black/70 z-50 transition-opacity duration-300"></div>
 
-  <!-- ========================================
-       SLIDE-OVER SHOPPING BAG
-  ========================================= -->
-  <div id="drawer-overlay" class="drawer-overlay fixed inset-0 z-[60] bg-black/60" onclick="toggleDrawer()"></div>
-  <aside id="drawer-panel" class="drawer-panel fixed top-0 right-0 bottom-0 z-[70] w-full max-w-md bg-charcoal border-l border-white/5 flex flex-col">
-
-    <!-- Drawer Header -->
-    <div class="flex items-center justify-between px-6 py-5 border-b border-white/10">
-      <h3 class="text-[12px] tracking-[0.2em] uppercase text-warmwhite">Shopping Bag</h3>
-      <button id="drawer-close" onclick="toggleDrawer()" class="text-slate hover:text-warmwhite transition-colors" aria-label="Close bag">
-        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/></svg>
-      </button>
-    </div>
-
-    <!-- Drawer Content -->
-    <div class="flex-1 overflow-y-auto p-6" id="drawer-content">
-      <!-- Empty state -->
-      <div id="drawer-empty" class="flex flex-col items-center justify-center h-full text-center">
-        <svg class="w-16 h-16 text-white/10 mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="0.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"/></svg>
-        <p class="text-sm text-slate/60 mb-2">Your bag is empty</p>
-        <p class="text-[11px] text-slate/40">Add London Rain to begin your journey.</p>
+  <aside id="cart-drawer" class="fixed top-0 right-0 h-full w-full sm:w-[420px] bg-charcoal border-l border-white/10 shadow-2xl z-50 transform translate-x-full transition-transform duration-300 flex flex-col justify-between p-6">
+    <div>
+      <div class="flex items-center justify-between border-b border-white/10 pb-4 mb-6">
+        <h2 class="font-serif text-lg tracking-[0.2em] uppercase text-warmwhite">Shopping Bag</h2>
+        <button onclick="toggleDrawer()" class="text-slate hover:text-warmwhite text-2xl focus:outline-none">&times;</button>
       </div>
 
-      <!-- Cart item (hidden by default) -->
-      <div id="drawer-item" class="hidden">
-        <div class="flex gap-4">
-          <div class="w-20 h-24 bg-obsidian/50 border border-white/5 rounded flex items-center justify-center flex-shrink-0">
-            <img src="images/bottle.jpg" alt="London Rain" class="w-14 h-auto" />
-          </div>
-          <div class="flex-1 min-w-0">
-            <p class="text-[11px] tracking-[0.15em] uppercase text-gold mb-1">ZADIYAH</p>
-            <p class="text-sm text-warmwhite mb-0.5">London Rain</p>
-            <p class="text-[11px] text-slate/50 mb-3">EDT — 50ml</p>
-            <div class="flex items-center justify-between">
-              <div class="flex items-center border border-white/10 rounded">
-                <button onclick="adjustCartQty(-1)" class="w-8 h-8 flex items-center justify-center text-slate hover:text-warmwhite text-xs transition-colors">−</button>
-                <span id="cart-qty" class="w-8 h-8 flex items-center justify-center text-[11px] text-warmwhite border-x border-white/10">1</span>
-                <button onclick="adjustCartQty(1)" class="w-8 h-8 flex items-center justify-center text-slate hover:text-warmwhite text-xs transition-colors">+</button>
-              </div>
-              <span id="cart-item-price" class="text-sm text-warmwhite font-medium">£14.99</span>
-            </div>
-          </div>
+      <div id="cart-item" class="flex gap-4 items-center bg-obsidian/40 border border-white/5 p-4 rounded-lg">
+        <img src="images/1784682926466.jpg" alt="London Rain EDT 50ml" class="w-16 h-20 object-contain rounded border border-white/10" />
+        <div class="flex-grow">
+          <p class="text-[10px] tracking-[0.2em] uppercase text-gold">ZADIYAH</p>
+          <h3 class="font-serif text-sm text-warmwhite">London Rain</h3>
+          <p class="text-[11px] text-slate/60 mb-2">EDT — 50ml</p>
+          <p id="cart-item-price" class="text-sm font-medium text-warmwhite">£9.99</p>
         </div>
-        <button onclick="removeFromCart()" class="mt-4 text-[10px] tracking-[0.15em] uppercase text-slate/50 hover:text-red-400 transition-colors">Remove</button>
+        <button onclick="removeFromCart()" class="text-slate hover:text-red-400 text-xs uppercase tracking-wider">Remove</button>
       </div>
     </div>
 
-    <!-- Drawer Footer -->
-    <div id="drawer-footer" class="hidden border-t border-white/10 p-6 space-y-4">
-      <div class="flex items-center justify-between">
-        <span class="text-[11px] tracking-[0.15em] uppercase text-slate">Subtotal</span>
-        <span id="cart-total" class="text-lg font-serif text-warmwhite">£14.99</span>
+    <div class="border-t border-white/10 pt-4 space-y-4">
+      <div class="flex justify-between items-center text-sm">
+        <span class="uppercase tracking-wider text-slate">Subtotal</span>
+        <span id="cart-total" class="font-serif text-lg text-warmwhite">£9.99</span>
       </div>
-      <p class="text-[10px] text-slate/50">Shipping calculated at checkout</p>
-      <a id="drawer-checkout" href="https://buy.stripe.com/cNi14naEvel389UeArffy00" target="_self" class="btn-gold w-full py-4 bg-gold text-obsidian text-[11px] tracking-[0.2em] uppercase font-semibold hover:bg-champagne transition-all duration-300 text-center block">
+      <p class="text-[11px] text-slate/60">Complimentary tracked delivery applied at checkout.</p>
+      <a id="drawer-checkout" href="https://buy.stripe.com/9B64gz13V3Gp2PA63Vffy01" class="block w-full py-4 bg-gold text-obsidian text-center uppercase text-xs font-semibold tracking-[0.2em] hover:bg-[#E0C06B] transition-colors duration-300 rounded-md">
         Proceed to Checkout
       </a>
-      <button onclick="toggleDrawer()" class="w-full py-3 text-[11px] tracking-[0.15em] uppercase text-slate hover:text-warmwhite transition-colors text-center">
+      <button onclick="toggleDrawer()" class="block w-full text-center text-[11px] uppercase tracking-wider text-slate hover:text-warmwhite pt-1">
         Continue Shopping
       </button>
     </div>
   </aside>
 
-
-  <!-- ========================================
-       STICKY MOBILE BUY BAR
-  ========================================= -->
-  <div id="mobile-buy-bar" class="mobile-buy-bar fixed bottom-0 left-0 right-0 z-50 lg:hidden bg-charcoal/95 header-blur border-t border-white/5">
-    <div class="flex items-center justify-between px-5 py-3">
-      <div>
-        <p class="text-[11px] text-slate">London Rain — 50ml</p>
-        <p class="font-serif text-lg text-warmwhite">£14.99</p>
-      </div>
-      <button id="mobile-add-to-cart" onclick="addToCart()" class="btn-gold px-6 py-3 bg-gold text-obsidian text-[11px] tracking-[0.15em] uppercase font-semibold hover:bg-champagne transition-all duration-300">
-        Add to Bag
-      </button>
-    </div>
-  </div>
-
-
   <!-- Application JavaScript -->
   <script src="app.js"></script>
-
 </body>
 </html>
