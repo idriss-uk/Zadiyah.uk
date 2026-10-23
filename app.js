@@ -2,7 +2,7 @@
 // ZADIYAH STOREFRONT ENGINE
 // ==========================================
 
-const PRODUCT_PRICE = 14.99;
+const PRODUCT_PRICE = 9.99;
 let cartQty = 1;
 
 // --- Drawer Open / Close ---
