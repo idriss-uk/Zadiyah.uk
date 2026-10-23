@@ -93,3 +93,22 @@ function selectGalleryImage(index, element) {
     element.classList.add('border-[#D4AF37]');
   }
 }
+
+// --- Mobile Navigation ---
+function toggleMobileNav() {
+  const nav = document.getElementById('mobile-nav');
+  const toggle = document.getElementById('mobile-menu-toggle');
+  if (!nav || !toggle) return;
+  toggle.setAttribute('aria-expanded', String(nav.classList.toggle('open')));
+}
+
+// --- Reveal Content as It Enters the Viewport ---
+const revealObserver = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.1 });
+document.querySelectorAll('.reveal').forEach(element => revealObserver.observe(element));
