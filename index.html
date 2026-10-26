@@ -60,7 +60,7 @@
   <div id="announcement-bar" class="relative z-[60] bg-charcoal border-b border-gold/10 transition-[margin] duration-300">
     <div class="max-w-[1440px] mx-auto px-6 flex items-center justify-center h-9">
       <p class="text-[9px] md:text-[10px] tracking-[0.35em] uppercase text-gold font-medium text-center">
-        <svg class="inline w-3 h-3 mr-1.5 -mt-px opacity-70" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3 6h11v11H3z M14 10h4l3 3v4h-7 M8 18a2 2 0 1 1-4 0a2 2 0 0 1 4 0 M20 18a2 2 0 1 1-4 0a2 2 0 0 1 4 0" /></svg>
+        <svg class="inline w-3 h-3 mr-1.5 -mt-px opacity-70" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v18M3 12h18"/></svg>
         Complimentary Express Delivery on All UK Orders
       </p>
     </div>
@@ -96,7 +96,7 @@
           <!-- Bag Trigger -->
           <button id="bag-trigger" onclick="toggleDrawer()" class="relative group flex items-center gap-2 text-slate hover:text-warmwhite transition-colors duration-300" aria-label="Open shopping bag">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.25 8.25h13.5a1.125 1.125 0 011.125 1.257z"/>
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12a1.125 1.125 0 011.12-1.007h11.374a1.125 1.125 0 011.12 1.007z"/>
             </svg>
             <span class="hidden md:inline text-[11px] tracking-[0.15em] uppercase">Bag</span>
             <span id="bag-count" class="absolute -top-2 -right-3 md:-right-2 w-4 h-4 bg-gold text-obsidian text-[9px] font-bold rounded-full flex items-center justify-center opacity-0 transition-opacity duration-300">0</span>
@@ -166,17 +166,17 @@
           </p>
 
           <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-fade-in-up opacity-0 animate-delay-4" style="animation-fill-mode: forwards;">
-            <a href="#notes" id="hero-cta-discover" class="btn-outline-gold inline-flex items-center justify-center px-8 py-4 border border-gold text-gold text-[11px] tracking-[0.2em] uppercase hover:text-obsidian transition-colors duration-300">
+            <a href="#notes" id="hero-cta-discover" class="btn-outline-gold inline-flex items-center justify-center px-8 py-4 border border-gold text-gold text-[11px] tracking-[0.2em] uppercase h-fit transition-all duration-300 hover:bg-gold/10 hover:scale-[1.01]">
               Discover the Scent
             </a>
-            <button id="hero-cta-add" onclick="addToCart()" class="btn-gold inline-flex items-center justify-center px-8 py-4 bg-gold text-obsidian text-[11px] tracking-[0.2em] uppercase font-semibold hover:bg-[#E0C06B] transition-colors duration-300">
+            <button id="hero-cta-add" onclick="addToCart()" class="btn-gold inline-flex items-center justify-center px-8 py-4 bg-gold text-obsidian text-[11px] tracking-[0.2em] uppercase font-semibold transition-all duration-300 hover:bg-champagne shadow-[0_0_0_1px_rgba(212,175,55,0.2)]">
               Add to Bag — £9.99
             </button>
           </div>
         </div>
 
         <!-- Right Product Display Container (Marketplace-style Carousel) -->
-        <div id="product-display" class="order-1 lg:order-2 w-full max-w-xl h-[460px] md:h-[500px] relative border border-[#1A1A1A] bg-[#0A0A0A] px-4 md:px-8 py-6 flex flex-col justify-center items-center text-center rounded-xl">
+        <div id="product-display" class="order-1 lg:order-2 w-full max-w-xl h-[460px] md:h-[500px] relative border border-[#1A1A1A] bg-[#0A0A0A] px-4 md:px-8 py-6 flex flex-col justify-center items-center">
           
           <!-- Marketplace-style Carousel Structure -->
           <div id="product-gallery" class="w-full h-full flex flex-row items-center gap-4 md:gap-6 relative">
@@ -188,23 +188,23 @@
             <div id="thumbnail-list" class="w-20 md:w-24 h-full flex flex-col items-center gap-2 relative py-1 flex-shrink-0">
               <div id="thumb-scroll-container" class="flex-grow w-full flex flex-col items-center gap-3 overflow-y-auto pr-1">
                 
-                <img src="images/bottle.jpg" onclick="selectGalleryImage(0, this)" class="w-full h-16 object-cover border-2 border-[#D4AF37] rounded clickable-thumbnail cursor-pointer transition-all duration-300" alt="Bottle Detail">
+                <img src="images/bottle.jpg" onclick="selectGalleryImage(0, this)" class="w-full h-16 object-cover border-2 border-[#D4AF37] rounded clickable-thumbnail cursor-pointer transition-all duration-300 opacity-100" alt="London Rain bottle thumbnail" />
 
-                <img src="images/1784682926466.jpg" onclick="selectGalleryImage(1, this)" class="w-full h-16 object-cover border-2 border-[#1A1A1A] rounded clickable-thumbnail cursor-pointer opacity-70 hover:opacity-100 transition-all duration-300" alt="London Rain in Garden">
+                <img src="images/1784682926466.jpg" onclick="selectGalleryImage(1, this)" class="w-full h-16 object-cover border-2 border-[#1A1A1A] rounded clickable-thumbnail cursor-pointer opacity-70 hover:opacity-100 transition-all duration-300" alt="London Rain product thumbnail 2" />
                 
-                <img src="images/pomelli_photoshoot_image_9_16_0829.png" onclick="selectGalleryImage(2, this)" class="w-full h-16 object-cover border-2 border-[#1A1A1A] rounded clickable-thumbnail cursor-pointer opacity-70 hover:opacity-100 transition-all duration-300" alt="London Rain Photoshoot">
+                <img src="images/pomelli_photoshoot_image_9_16_0829.png" onclick="selectGalleryImage(2, this)" class="w-full h-16 object-cover border-2 border-[#1A1A1A] rounded clickable-thumbnail cursor-pointer opacity-70 hover:opacity-100 transition-all duration-300" alt="London Rain product thumbnail 3" />
                 
-                <img src="images/pomelli_photoshoot_image_9_16_0829 (1).png" onclick="selectGalleryImage(3, this)" class="w-full h-16 object-cover border-2 border-[#1A1A1A] rounded clickable-thumbnail cursor-pointer opacity-70 hover:opacity-100 transition-all duration-300" alt="London Rain Atmosphere">
+                <img src="images/pomelli_photoshoot_image_9_16_0829 (1).png" onclick="selectGalleryImage(3, this)" class="w-full h-16 object-cover border-2 border-[#1A1A1A] rounded clickable-thumbnail cursor-pointer opacity-70 hover:opacity-100 transition-all duration-300" alt="London Rain product thumbnail 4" />
                 
-                <img src="images/1784682913725.jpg" onclick="selectGalleryImage(4, this)" class="w-full h-16 object-cover border-2 border-[#1A1A1A] rounded clickable-thumbnail cursor-pointer opacity-70 hover:opacity-100 transition-all duration-300" alt="ZADIYAH Meadow Setting">
+                <img src="images/1784682913725.jpg" onclick="selectGalleryImage(4, this)" class="w-full h-16 object-cover border-2 border-[#1A1A1A] rounded clickable-thumbnail cursor-pointer opacity-70 hover:opacity-100 transition-all duration-300" alt="London Rain product thumbnail 5" />
                 
-                <img src="images/scent_pyramid.jpg" onclick="selectGalleryImage(5, this)" class="w-full h-16 object-cover border-2 border-[#1A1A1A] rounded clickable-thumbnail cursor-pointer opacity-70 hover:opacity-100 transition-all duration-300" alt="London Rain Notes Pyramid">
+                <img src="images/scent_pyramid.jpg" onclick="selectGalleryImage(5, this)" class="w-full h-16 object-cover border-2 border-[#1A1A1A] rounded clickable-thumbnail cursor-pointer opacity-70 hover:opacity-100 transition-all duration-300" alt="London Rain scent pyramid thumbnail" />
 
               </div>
             </div>
 
           </div>
-            
+
           <!-- Tagline -->
           <div class="absolute bottom-2 left-6 text-[#777] text-xs font-serif italic tracking-wider">The Smell of Rain, Bottled.</div>
           
@@ -302,10 +302,10 @@
 
       <div class="space-y-6 text-sm md:text-base text-slate leading-relaxed">
         <p>
-          London Rain was conceived during an October evening walk across Waterloo Bridge — that rare moment when the city pauses beneath a violet sky and the first heavy drops of rain transform the streets into rivers of reflected gold.
+          London Rain was conceived during an October evening walk across Waterloo Bridge — that rare moment when the city pauses beneath a violet sky and the first heavy drops of rain transform the atmosphere into something almost sacred.
         </p>
         <p>
-          Every bottle is a small-batch formulation hand-poured in the United Kingdom. We source ethically traded ingredients — from Calabrian bergamot to sustainably harvested Haitian vetiver — ensuring each spray tells an honest story.
+          Every bottle is a small-batch formulation hand-poured in the United Kingdom. We source ethically traded ingredients — from Calabrian bergamot to sustainably harvested Haitian vetiver — and compose each batch to echo the mood of a rain-touched evening in London.
         </p>
       </div>
 
@@ -465,7 +465,7 @@
             name="email"
             placeholder="Your Email Address"
             required
-            class="w-full px-5 py-4 bg-obsidian border border-white/10 text-warmwhite text-sm placeholder:text-slate/40 rounded-none focus:outline-none focus:border-gold transition-colors duration-300 sm:rounded-l"
+            class="w-full px-5 py-4 bg-obsidian border border-white/10 text-warmwhite text-sm placeholder:text-slate/40 rounded-none focus:outline-none focus:border-gold transition-colors duration-300"
           />
           <button
             type="submit"
@@ -485,7 +485,7 @@
     <div class="max-w-4xl mx-auto px-6 text-center">
       <p class="text-[10px] tracking-[0.4em] uppercase text-gold mb-3">Concierge & Inquiries</p>
       <h2 class="font-serif text-3xl md:text-4xl text-warmwhite font-light mb-4">Get in Touch</h2>
-      <p class="text-sm text-slate mb-8">Have a question regarding London Rain EDT or your order? Send us a direct inquiry at <a href="mailto:info@zadiyah.uk" class="text-gold underline hover:text-[#E5C15A]">info@zadiyah.uk</a>.</p>
+      <p class="text-sm text-slate mb-8">Have a question regarding London Rain EDT or your order? Send us a direct inquiry at <a href="mailto:info@zadiyah.uk" class="text-gold underline hover:text-gold/80 transition-colors">info@zadiyah.uk</a>.</p>
       
       <div class="w-full h-px bg-white/10 my-12"></div>
 
@@ -530,7 +530,7 @@
         <span id="cart-total" class="font-serif text-lg text-warmwhite">£9.99</span>
       </div>
       <p class="text-[11px] text-slate/60">Complimentary tracked delivery applied at checkout.</p>
-      <a id="drawer-checkout" href="https://buy.stripe.com/9B64gz13V3Gp2PA63Vffy01" class="block w-full py-4 bg-gold text-obsidian text-center uppercase text-xs font-semibold tracking-[0.2em] hover:bg-[#E0C06B] transition-colors duration-300 rounded-md">
+      <a id="drawer-checkout" href="https://buy.stripe.com/4gM9AT6of5Ox4XI4ZRffy02" class="block w-full py-4 bg-gold text-obsidian text-center uppercase text-xs font-semibold tracking-[0.2em] hover:bg-champagne transition-all duration-300 rounded-sm">
         Proceed to Checkout
       </a>
       <button onclick="toggleDrawer()" class="block w-full text-center text-[11px] uppercase tracking-wider text-slate hover:text-warmwhite pt-1">
